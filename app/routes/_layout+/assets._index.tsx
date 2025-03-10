@@ -235,7 +235,7 @@ export function shouldRevalidate({
 }
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => [
-  { title: appendToMetaTitle(data?.header.title) },
+  { title: appendToMetaTitle(data?.header?.title) },
 ];
 
 export default function AssetIndexPage() {
